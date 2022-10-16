@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Store Landing Project</title>
+    <!-- LINKED STYLESHEET-->
+    <link rel="stylesheet" href="styles.css">
+   
+    <!--FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
+   
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!--LINKED JAVASCRIPT THAT IS DEFERRED-->
+    <script src="main.js" defer></script>  
+</head>
+</head>
+<body>
+    <main id="main" aria-labelledby="main">
+        <header id="header" aria-labelledby="header">
+            <nav class="nav" aria-label="navigation">
+                <div class="container nav-container">
+                    <a href="#"><i class="fa-brands fa-artstation"></i></a>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                    </ul>
+                    <button class="nav-toggle" id="nav-toggle-open"><i class="fa-solid fa-bars"></i></button>
+                    <button class="nav-toggle" id="nav-toggle-close"><i class="fa-solid fa-xmark"></i></button>
+                </div> 
+            </nav>
+        </header>
+        <!--END OF NAVIGATION-->
+        <section id="home"  class="home" aria-labelledby="home">
+            <div class="container">
+                <div class="left">
+                    <div class="header_image-bg"></div>
+                    <picture class="header_image-lg">
+                        <img src="./images2/henrik-donnestad-_u-xUWiLiJo-unsplash.jpg" alt="henrik art" loading="lazy">
+                    </picture>
+                    <div class="header_image-sm"></div>
+                </div>
+                <aside class="right">
+                    <h1>Art Dealer</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Reprehenderit recusandae doloribus veritatis rerum fugit! Temporibus.
+                    </p>
+                    <p>
+                    <p>
+                        <a href="#products" class="btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                    </p>  
+                </article>
+                    </p>
+                </aside>
+            </div> 
+        </section>
+        <!--END OF HOME SECTION-->
+        <section id="about" class="about" aria-labelledby="about">
+            <h2>About</h2>
+            <div class="container"> 
+                <div class="about_left">
+                    <div class="about_image-bg"></div>
+                    <picture class="about_image-lg">
+                        <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" alt="usgs unsplash" loading="lazy">
+                    </picture>
+                    <div class="about_image-sm">
+                        <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" alt="about image" loading="lazy">
+                    </div>
+                </div> 
+                <aside class="right">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere eum porro dolorum enim, facilis laboriosam?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam reprehenderit assumenda, nam in dicta!.
+                    </p>
+                </aside> 
+            </div>
+        </section>
+        <!--END OF ABOUT SECTION-->
+        <section id="Gallery" class="gallery" aria-labelledby="gallery">
+            <h2>Gallery</h2>
+            <div class="container">
+               <picture class="slide">
+                <img src="./images2/pawel-czerwinski-W_mfoOi1Elc-unsplash.jpg" alt="pawel unsplash" loading="lazy">
+               </picture>
+               <picture class="slide">
+                <img src="./images2/solen-feyissa-_PqTZle1zj4-unsplash.jpg" alt="solen unsplash" loading="lazy">
+               </picture>
+               <picture class="slide">
+                <img src="./images2/scott-rodgerson-z0MDyylvY1k-unsplash.jpg" alt="scott unsplash" loading="lazy">
+               </picture>
+               <picture class="slide">
+                <img src="./images2/victor-grabarczyk-wN9DU73b8_s-unsplash.jpg" alt="victor" loading="lazy">
+               </picture>
+            </div>
+        </section>
+        <!--END OF GALLERY SECTION-->
+        <section id="exhibitions" class="exhibitions">
+            <h2>Exhibitions</h2>
+            <div class="container">
+                <picture class="birds">
+                    <img src="./images2/mcgill-library-XPd2CXRyMgc-unsplash.jpg" alt="two birds" loading="lazy">
+                </picture>
+                <picture class="birds">
+                    <img src="./images2/mcgill-library-COphCQKS660-unsplash.jpg" alt="two birds" loading="lazy">
+                </picture>  
+            </div>
+        </section>
+        <!--END OF EXHIBITIONS SECTION-->
+        <footer id="footer" aria-label="footer">
+            <section id="footer-main">
+                <div class="footer-column">
+                    <h3 class="footer-title">Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Accesability</a></li>
+                        <li><a href="#">Company News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul>
+                       <li><a href="#">Docs</a></li>
+                       <li><a href="#">Blog</a></li>
+                       <li><a href="#">Downloads</a></li>
+                       <li><a href="#">Release Notes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Help Desk</h3>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Advertise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Stay Informed</h3>
+                    <p>Subscribe to our mailing list.</p>
+                    <form action="newsletter" aria-label="signup">
+                        <input id="email" type="email" name="email" placeholder="Enter your email" 
+                        required aria-label="enter your email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </section>
+            <!--SOCIAL MEDIA-->
+            <section id="footer-socials" aria-label="social media">
+                <ul class="footer-icons">
+                    <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="twitter"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="github"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </section>
+            <!--LEGAL NOTICE-->
+            <section id="footer-legal" aria-label="legal">
+                <small>
+                    <ul class="footer-legal-items">
+                       <li><a href="#">Terms &amp; Conditions</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li>&copy; Copyright 2022 xyz</li>
+                    </ul>
+                </small>
+            </section>
+        </footer> 
+        <!--END OF FOOTER SECTION-->
+    </main> 
+</body>
+</html>
