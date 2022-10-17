@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #ff7b02;
-    --color-bg-3: #012734;
-    --color-bg-4: #003347;
-    --color-light: #85a2b2;
+    --color-secondary: #ff7b02;
+    --color-tertiary: #012734;
+    --color-alternate: #003347;
+    --color-primary: #85a2b2;
     --color-white: hsl(0, 0%, 90%);
     --transition: all 400ms ease;
     --container-md: 92%;
@@ -14,7 +14,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    outline: none;
     list-style: none;
     text-decoration: none;
 }
@@ -25,8 +24,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-bg-3);
-    color: var(--color-light);
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
     line-height: 1.7;
     min-height: 100vh;
     min-width: 100vw;
@@ -47,16 +46,16 @@ h1 {
 h1, h2 {
     color: var(--color-white);
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 a {
-    color: var(--color-light);
+    color: var(--color-primary);
     transition: 0.3s ease;
 }
 
 a:hover {
-    color: var(--color-primary)!important;
+    color: var(--color-secondary)!important;
     cursor: pointer !important;   
 }
 
@@ -102,7 +101,7 @@ section[class="home"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr)
     minmax(min-content, 1fr);
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
 }
 
@@ -116,7 +115,7 @@ section[class="about"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr)
     minmax(min-content, 1fr);
-    gap: 3rem;
+    gap: 5rem;
     position: relative;
     align-items: center;
     grid-row: 1fr 1fr;
@@ -127,7 +126,7 @@ section[class="about"] .about_image-bg {
     height: 24rem;
     bottom: 0;
     position: absolute;
-    background-color: var(--color-bg-4);
+    background-color: var(--color-alternate);
 }
 
 section[class="about"] .about_image-lg {
@@ -170,7 +169,7 @@ section[class="gallery"] .container {
 }
 
 section[class="gallery"] .slide {
-    border: 0.5rem solid var(--color-bg-4);
+    border: 0.5rem solid var(--color-alternate);
 }
 
 
@@ -194,14 +193,13 @@ section[class="exhibitions"] .container {
 }
 
 section[class="exhibitions"] .birds {
-    border: 1rem solid var(--color-bg-4);
+    border: 1rem solid var(--color-alternate);
 }
 /* END OF EXHIBITIONS SECTION */
 
-
 /* FOOTER STYLING */
 footer[id="footer"] {
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
     color: var(--color-primary);
 }
 
@@ -209,7 +207,7 @@ footer[id="footer"] a {
     color: var(--color-primary);
 }
 footer[id="footer"] a:hover {
-    color: var(--color-white);
+    text-decoration: underline;
 
 }
 
@@ -271,13 +269,13 @@ ul[class="footer-icons"] li {
 /* LEGAL SECTION */
 
 section[id="footer-legal"] a {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 section[id="footer-legal"] {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     
 }
 
@@ -296,3 +294,50 @@ ul[class="footer-legal-items"] li {
     flex: 1;
 }
 /* END OF FOOTER ELEMENT STYLING */
+
+/* MEDIA QUERIES */
+@media  screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-md);
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav-links li {
+        height: 5rem;
+    }
+
+    .nav-links li a {
+        background-color: var(--color-alternate);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 1rem;
+        border-top: 1px solid var(--color-tertiary);
+    }
+    
+    .nav_toggle {
+        display: inline-block;
+        background-color: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+    #nav_toggle-close {
+        display: none;
+    }
+    
+
+
+
+
+
+}

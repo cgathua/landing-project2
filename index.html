@@ -25,15 +25,15 @@
         <header id="header" aria-labelledby="header">
             <nav class="nav" aria-label="navigation">
                 <div class="container nav-container">
-                    <a href="#"><i class="fa-brands fa-artstation"></i></a>
+                    <a href="#"><i class="fa-brands fa-artstation fa-xl"></i></a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#Gallery">Gallery</a></li>
                         <li><a href="#exhibitions">Exhibitions</a></li>
                     </ul>
-                    <button class="nav-toggle" id="nav-toggle-open"><i class="fa-solid fa-bars"></i></button>
-                    <button class="nav-toggle" id="nav-toggle-close"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="nav_toggle" id="nav_toggle-open"><i class="fa-solid fa-bars fa-xl"></i></button>
+                    <button class="nav_toggle" id="nav_toggle-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
                 </div> 
             </nav>
         </header>
@@ -104,7 +104,7 @@
             </div>
         </section>
         <!--END OF GALLERY SECTION-->
-        <section id="exhibitions" class="exhibitions">
+        <section id="exhibitions" class="exhibitions" aria-labelledby="exhibitions">
             <h2>Exhibitions</h2>
             <div class="container">
                 <picture class="birds">
@@ -116,7 +116,7 @@
             </div>
         </section>
         <!--END OF EXHIBITIONS SECTION-->
-        <footer id="footer" aria-label="footer">
+        <footer id="footer" aria-labelledby="footer">
             <section id="footer-main">
                 <div class="footer-column">
                     <h3 class="footer-title">Company</h3>
@@ -129,12 +129,12 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Resources</h3>
+                    <h3 class="footer-title">Permalinks</h3>
                     <ul>
-                       <li><a href="#">Docs</a></li>
-                       <li><a href="#">Blog</a></li>
-                       <li><a href="#">Downloads</a></li>
-                       <li><a href="#">Release Notes</a></li>
+                       <li><a href="#home">Home</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#Gallery">Gallery</a></li>
+                       <li><a href="#exhibitions">Exhibitions</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -149,9 +149,9 @@
                     <h3 class="footer-title">Stay Informed</h3>
                     <p>Subscribe to our mailing list.</p>
                     <form action="newsletter" aria-label="signup">
-                        <input id="email" type="email" name="email" placeholder="Enter your email" 
-                        required aria-label="enter your email">
-                        <input type="submit" value="Subscribe">
+                        <label for="email"><input id="email" type="email" name="email" placeholder="Enter your email"
+                        required="valid email" aria-label="enter your email"></label>
+                        <label for="submit button"><input type="submit" value="Subscribe"></label>
                     </form>
                 </div>
             </section>
