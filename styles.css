@@ -321,6 +321,10 @@ ul[class="footer-legal-items"] li {
         cursor: pointer;
     } 
 
+    bento-sidebar[id="sidebar1"] {
+        cursor: pointer;
+    }
+
     bento-sidebar[id="sidebar1"] li {
         padding: 2rem;
     }
