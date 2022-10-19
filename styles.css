@@ -301,8 +301,8 @@ ul[class="footer-legal-items"] li {
 }
 /* END OF FOOTER ELEMENT STYLING */
 
-/* MEDIA QUERIES FOR SMALL SCREENS */
-@media  screen and (max-width: 640px) {
+/* MEDIA QUERIES FOR SMALL TO MEDIUM SCREENS */
+@media  screen and (max-width: 1024px) {
     header[id="header"] {
         position: relative;
     }
