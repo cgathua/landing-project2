@@ -1,11 +1,8 @@
 :root {
-    --color-secondary: #ff7b02;
-    --color-tertiary: #012734;
-    --color-alternate: #003347;
-    --color-primary: #85a2b2;
-    --color-white: hsl(0, 0%, 90%);
-    --transition: all 400ms ease;
-    --container-md: 92%;
+    --color-secondary: #D0C0C2;
+    --color-tertiary: #1C1D27;
+    --color-alternate: #648096;
+    --color-primary: #8096A5;
     --container-lg: 80%;
 }
 
@@ -29,8 +26,13 @@ body {
     line-height: 1.7;
     min-height: 100vh;
     min-width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
+main[id="main"] {
+    flex: 1;
+}
 section {
     padding: 6rem 0;
 }
@@ -44,13 +46,13 @@ h1 {
 }
 
 h1, h2 {
-    color: var(--color-white);
+    color: var(--color-secondary);
     font-weight: 400;
     line-height: 1.5;
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-tertiary);
     transition: 0.3s ease;
 }
 
@@ -77,17 +79,13 @@ header[id="header"] {
     width: 100vw;
     top: 0;
     left: 0;
-    background-color: red;
+    background-color: var(--color-primary);
 }
 
 header[id="header"] .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-bento-sidebar[id="sidebar1"] {
-    cursor: pointer;
 }
 
 .buttons {
@@ -111,6 +109,10 @@ section[class="home"] .container {
 
 section[class="home"] p {
     margin: 1rem auto;
+}
+
+section[class="home"] .btn {
+    color: var(--color-primary);
 }
 
 /* END OF HOME SECTION */
@@ -315,18 +317,26 @@ ul[class="footer-legal-items"] li {
     #open-sidebar {
         display: inline-block;
         background-color: transparent;
-        color: var(--color-white);
+        color: var(--color-primary);
         cursor: pointer;
     } 
+
+    bento-sidebar[id="sidebar1"] li {
+        padding: 2rem;
+    }
+
+    bento-sidebar[id="sidebar1"] a {
+        color: var(--color-primary);
+    }
     section[class="home"] .container {
         padding: 5rem 0;
         grid-template-columns: minmax(min-content, 1fr);
         
     }
     
-
     section[class="about"] .container {
         grid-template-columns: minmax(min-content, 1fr);
+    
     }
     
     section[class="about"] .about_image-bg, .about_image-sm {
@@ -341,6 +351,5 @@ ul[class="footer-legal-items"] li {
     section[class="exhibitions"] .container {
         grid-template-columns: minmax(min-content, 1fr);
     }
-
 
 }

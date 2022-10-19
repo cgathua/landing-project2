@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!--BENTO JS SIDEBAR-->
     <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
     <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
@@ -25,13 +26,12 @@
     <!--LINKED JAVASCRIPT THAT IS DEFERRED-->
     <script src="main.js" defer></script>  
 </head>
-</head>
 <body>
-    <main id="main" aria-labelledby="main">
-        <header id="header" aria-labelledby="header">
+    <main id="main" aria-label="main">
+        <header id="header" aria-label="header">
             <nav class="nav" aria-label="navigation">
                 <div class="container">
-                    <a href="#"><i class="fa-brands fa-artstation fa-xl"></i></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-brush fa-xl" aria-label="brush logo" ></i></a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -41,6 +41,7 @@
                 </div> 
             </nav>
         </header>
+        <!--MOBILE NAV-->
         <bento-sidebar id="sidebar1" side="right" hidden>
             <ul>
               <li><a href="#home">Home</a></li>
@@ -55,29 +56,26 @@
           </div>
           <!--END OF BENTO SLIDER-->
         <!--END OF NAVIGATION-->
-        <section id="home"  class="home" aria-labelledby="home">
+        <section id="home"  class="home" aria-label="home">
             <div class="container">
                 <div class="left">
                     <picture class="header_image-lg">
                         <img src="./images2/henrik-donnestad-_u-xUWiLiJo-unsplash.jpg" alt="henrik art" loading="lazy">
                     </picture>
                 </div>
-                <aside class="right">
+                <article class="right">
                     <h1>Art Dealer</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Reprehenderit recusandae doloribus veritatis rerum fugit! Temporibus.
                     </p>
                     <p>
-                    <p>
-                        <a href="#products" class="btn">Learn More <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#products" class="btn">Learn More <i class="fa-solid fa-angle-right" aria-label="angle right icon"></i></a>
                     </p>  
                 </article>
-                    </p>
-                </aside>
             </div> 
         </section>
         <!--END OF HOME SECTION-->
-        <section id="about" class="about" aria-labelledby="about">
+        <section id="about" class="about" aria-label="about">
             <h2>About</h2>
             <div class="container"> 
                 <div class="about_left">
@@ -85,9 +83,9 @@
                     <picture class="about_image-lg">
                         <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" alt="usgs unsplash" loading="lazy">
                     </picture>
-                    <div class="about_image-sm">
+                    <picture class="about_image-sm">
                         <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" alt="about image" loading="lazy">
-                    </div>
+                    </picture>
                 </div> 
                 <aside class="right">
                     <p>
@@ -98,7 +96,7 @@
             </div>
         </section>
         <!--END OF ABOUT SECTION-->
-        <section id="Gallery" class="gallery" aria-labelledby="gallery">
+        <section id="Gallery" class="gallery" aria-label="gallery">
             <h2>Gallery</h2>
             <div class="container">
                <picture class="slide">
@@ -116,7 +114,7 @@
             </div>
         </section>
         <!--END OF GALLERY SECTION-->
-        <section id="exhibitions" class="exhibitions" aria-labelledby="exhibitions">
+        <section id="exhibitions" class="exhibitions" aria-label="exhibitions">
             <h2>Exhibitions</h2>
             <div class="container">
                 <picture class="birds">
@@ -128,7 +126,7 @@
             </div>
         </section>
         <!--END OF EXHIBITIONS SECTION-->
-        <footer id="footer" aria-labelledby="footer">
+        <footer id="footer" aria-label="footer">
             <section id="footer-main">
                 <div class="footer-column">
                     <h3 class="footer-title">Company</h3>
@@ -150,7 +148,7 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3 class="footer-title">Help Desk</h3>
+                    <h3 class="footer-title">Contact</h3>
                     <ul>
                         <li><a href="#">Email</a></li>
                         <li><a href="#">Sales</a></li>
