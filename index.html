@@ -15,6 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!--BENTO JS SIDEBAR-->
+    <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
 
     <!--LINKED JAVASCRIPT THAT IS DEFERRED-->
     <script src="main.js" defer></script>  
@@ -24,7 +30,7 @@
     <main id="main" aria-labelledby="main">
         <header id="header" aria-labelledby="header">
             <nav class="nav" aria-label="navigation">
-                <div class="container nav-container">
+                <div class="container">
                     <a href="#"><i class="fa-brands fa-artstation fa-xl"></i></a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
@@ -32,20 +38,29 @@
                         <li><a href="#Gallery">Gallery</a></li>
                         <li><a href="#exhibitions">Exhibitions</a></li>
                     </ul>
-                    <button class="nav_toggle" id="nav_toggle-open"><i class="fa-solid fa-bars fa-xl"></i></button>
-                    <button class="nav_toggle" id="nav_toggle-close"><i class="fa-solid fa-xmark fa-xl"></i></button>
                 </div> 
             </nav>
         </header>
+        <bento-sidebar id="sidebar1" side="right" hidden>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#Gallery">Gallery</a></li>
+              <li><a href="#exhibitions">Exhibitions</a></li>
+            </ul>
+          </bento-sidebar>
+          <!--BENTO BUTTONS-->
+          <div class="buttons" style="margin-top: 0.5rem;">
+            <button id="open-sidebar"><i class="fa-solid fa-bars fa-xl"></i></i></button>
+          </div>
+          <!--END OF BENTO SLIDER-->
         <!--END OF NAVIGATION-->
         <section id="home"  class="home" aria-labelledby="home">
             <div class="container">
                 <div class="left">
-                    <div class="header_image-bg"></div>
                     <picture class="header_image-lg">
                         <img src="./images2/henrik-donnestad-_u-xUWiLiJo-unsplash.jpg" alt="henrik art" loading="lazy">
                     </picture>
-                    <div class="header_image-sm"></div>
                 </div>
                 <aside class="right">
                     <h1>Art Dealer</h1>
@@ -78,9 +93,6 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Facere eum porro dolorum enim, facilis laboriosam?
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam reprehenderit assumenda, nam in dicta!.
                     </p>
                 </aside> 
             </div>
