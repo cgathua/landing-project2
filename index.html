@@ -12,9 +12,9 @@
     <script src="https://kit.fontawesome.com/4a00a82b9f.js" defer crossorigin="anonymous"></script>
    
     <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com"  defer crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" defer>
 
     <!--BENTO JS SIDEBAR-->
     <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
@@ -24,14 +24,14 @@
     <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
 
     <!--LINKED JAVASCRIPT THAT IS DEFERRED-->
-    <script src="main.js" defer></script>  
+    <script src="main.js" async></script>  
 </head>
 <body>
     <main id="main" aria-label="main">
         <header id="header" aria-label="header">
             <nav class="nav" aria-label="navigation">
                 <div class="container">
-                    <a href="#home"><i class="fa-sharp fa-solid fa-brush fa-xl"></i></a>
+                    <a href="#" id="logo"><i class="fa-sharp fa-solid fa-brush fa-xl"></i></a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -42,8 +42,9 @@
             </nav>
         </header>
         <!--MOBILE NAV-->
+        <div class="container">
         <bento-sidebar id="sidebar1" side="right" hidden>
-            <ul>
+            <ul class="bento">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#Gallery">Gallery</a></li>
@@ -51,9 +52,10 @@
             </ul>
           </bento-sidebar>
           <!--BENTO BUTTONS-->
-          <div class="buttons" style="margin-top: 0.5rem;">
+          <div class="buttons" style="padding-top: 0.5rem;">
             <button id="open-sidebar" aria-label="menu"><i class="fa-solid fa-bars fa-xl"></i></i></button>
           </div>
+        </div>
           <!--END OF BENTO SLIDER-->
         <!--END OF NAVIGATION-->
         <section id="home"  class="home" aria-label="home">

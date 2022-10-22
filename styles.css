@@ -91,6 +91,8 @@ header[id="header"] .container {
 .buttons {
     display: none;
 }
+
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -356,4 +358,12 @@ ul[class="footer-legal-items"] li {
         grid-template-columns: minmax(min-content, 1fr);
     }
 
+}
+/* MEDIA QUERIES FOR LARGE SCREENS */
+
+@media screen and (min-width: 1024px){
+    #sidebar1, .bento {
+        display: none;
+    }
+    
 }
