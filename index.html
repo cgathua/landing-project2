@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Store Landing Project</title>
-    <!-- LINKED STYLESHEET-->
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- LOCAL STYLESHEET-->
     <link rel="stylesheet" href="styles.css">
    
     <!--FONTAWESOME ICONS-->
     <script src="https://kit.fontawesome.com/4a00a82b9f.js" defer crossorigin="anonymous"></script>
-   
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" defer>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" defer>
-
+    
     <!--BENTO JS SIDEBAR-->
     <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
     <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
@@ -24,14 +24,15 @@
     <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
 
     <!--LINKED JAVASCRIPT THAT IS DEFERRED-->
-    <script src="main.js" async></script>  
+    <script src="main.js" defer></script>  
 </head>
+<!--END OF HEAD-->
 <body>
     <main id="main" aria-label="main">
         <header id="header" aria-label="header">
             <nav class="nav" aria-label="navigation">
                 <div class="container">
-                    <a href="#" id="logo"><i class="fa-sharp fa-solid fa-brush fa-xl"></i></a>
+                    <a href="#home" aria-label="logo"><i class="fa-sharp fa-solid fa-brush fa-xl"></i></a>
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -40,9 +41,9 @@
                     </ul>
                 </div> 
             </nav>
+            <!--END OF DESKTOP NAV-->
         </header>
-        <!--MOBILE NAV-->
-        <div class="container">
+        <!--END OF HEADER-->
         <bento-sidebar id="sidebar1" side="right" hidden>
             <ul class="bento">
               <li><a href="#home">Home</a></li>
@@ -50,18 +51,17 @@
               <li><a href="#Gallery">Gallery</a></li>
               <li><a href="#exhibitions">Exhibitions</a></li>
             </ul>
-          </bento-sidebar>
-          <!--BENTO BUTTONS-->
-          <div class="buttons" style="padding-top: 0.5rem;">
-            <button id="open-sidebar" aria-label="menu"><i class="fa-solid fa-bars fa-xl"></i></i></button>
-          </div>
+        </bento-sidebar>
+        <!--BENTO BUTTONS-->
+        <div class="buttons" style="margin-top: 0.5rem;">
+            <button id="open-sidebar" aria-label="menu"><i class="fa-solid fa-bars fa-2x"></i></button>
         </div>
-          <!--END OF BENTO SLIDER-->
-        <!--END OF NAVIGATION-->
+        <!--END OF BENTO SIDEBAR-->
         <section id="home"  class="home" aria-label="home">
             <div class="container">
                 <div class="left">
                     <picture class="header_image-lg">
+                        <source type="image/avif" srcset="./images2/henrik-donnestad-_u-xUWiLiJo-unsplash.avif">
                         <img src="./images2/henrik-donnestad-_u-xUWiLiJo-unsplash.jpg" width="640" height="640" alt="henrik art">
                     </picture>
                 </div>
@@ -83,9 +83,11 @@
                 <div class="about_left">
                     <div class="about_image-bg"></div>
                     <picture class="about_image-lg">
+                        <source srcset="./images2/usgs-35Z2ylLRCO8-unsplash.avif" type="image/avif">
                         <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" width="640" height="640" alt="usgs unsplash" loading="lazy">
                     </picture>
                     <picture class="about_image-sm">
+                        <source srcset="./images2/usgs-35Z2ylLRCO8-unsplash.avif" type="image/avif">
                         <img src="./images2/usgs-35Z2ylLRCO8-unsplash.jpg" width="640" height="640" alt="about image" loading="lazy">
                     </picture>
                 </div> 
@@ -102,15 +104,19 @@
             <h2>Gallery</h2>
             <div class="container">
                <picture class="slide">
+                <source srcset="./images2/pawel-czerwinski-W_mfoOi1Elc-unsplash.avif" type="image/avif">
                 <img src="./images2/pawel-czerwinski-W_mfoOi1Elc-unsplash.jpg" width="640" height="960" alt="pawel unsplash" loading="lazy">
                </picture>
                <picture class="slide">
+                <source srcset="./images2/solen-feyissa-_PqTZle1zj4-unsplash.avif" type="image/avif">
                 <img src="./images2/solen-feyissa-_PqTZle1zj4-unsplash.jpg" width="640" height="960" alt="solen unsplash" loading="lazy">
                </picture>
                <picture class="slide">
+                <source srcset="./images2/scott-rodgerson-z0MDyylvY1k-unsplash.avif" type="image/avif">
                 <img src="./images2/scott-rodgerson-z0MDyylvY1k-unsplash.jpg" width="640" height="960" alt="scott unsplash" loading="lazy">
                </picture>
                <picture class="slide">
+                <source srcset="./images2/victor-grabarczyk-wN9DU73b8_s-unsplash.avif" type="image/avif">
                 <img src="./images2/victor-grabarczyk-wN9DU73b8_s-unsplash.jpg" width="640" height="908" alt="victor" loading="lazy">
                </picture>
             </div>
@@ -121,6 +127,11 @@
             <div class="container">
                 <picture class="birds">
                     <img src="./images2/mcgill-library-XPd2CXRyMgc-unsplash.jpg" width="640" height="868" alt="two birds" loading="lazy">
+                </picture>
+                <picture class="birds">
+                    <source srcset="./images2/andrew-pons-lylCw4zcA7I-unsplash.avif" type="image/avif">
+                    <img src="./images2/andrew-pons-lylCw4zcA7I-unsplash.jpg" width="640" height="960" alt="parrot" loading="lazy">
+
                 </picture>
                 <picture class="birds">
                     <img src="./images2/mcgill-library-COphCQKS660-unsplash.jpg" width="640" height="797" alt="two birds" loading="lazy">
@@ -167,7 +178,7 @@
                     </form>
                 </div>
             </section>
-            <!--SOCIAL MEDIA-->
+            <!--END OF FOOTER MAIN SECTION-->
             <section id="footer-socials" aria-label="social media">
                 <ul class="footer-icons">
                     <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
@@ -178,16 +189,17 @@
                     <li><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
                 </ul>
             </section>
-            <!--LEGAL NOTICE-->
+            <!--END OF SOCIAL MEDIA SECTION-->
             <section id="footer-legal" aria-label="legal">
                 <small>
                     <ul class="footer-legal-items">
                        <li><a href="#">Terms &amp; Conditions</a></li>
                        <li><a href="#">Privacy Policy</a></li>
-                       <li>&copy; Copyright 2022 xyz</li>
+                       <li>&copy; Copyright 2022 art</li>
                     </ul>
                 </small>
             </section>
+            <!--END OF LEGAL SECTION-->
         </footer> 
         <!--END OF FOOTER SECTION-->
     </main> 
