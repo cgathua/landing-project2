@@ -32,34 +32,35 @@
 <!--END OF HEAD-->
 <body>
     <main id="main" aria-label="main">
+        <nav id="mobile-nav" aria-label="mobile navigation">
+            <bento-sidebar id="sidebar1" side="right" hidden>
+                <ul class="bento">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#Gallery">Gallery</a></li>
+                  <li><a href="#exhibitions">Exhibitions</a></li>
+                </ul>
+            </bento-sidebar>
+            <!--SIDEBAR CONTROL-->
+            <div class="buttons" style="margin:0 0.5rem">
+                <button id="open-sidebar" aria-label="menu"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1C1D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+            </div>
+            <a href="#home" class="logo1" aria-label="logo">LOGO</a>
+        </nav>
+        <!--END OF MOBILE NAV-->
         <header id="header" aria-label="header">
-            <nav class="nav" aria-label="navigation">
-                <div class="container">
-                    <a href="#home" aria-label="logo"><i class="fa-sharp fa-solid fa-brush fa-xl"></i></a>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#Gallery">Gallery</a></li>
-                        <li><a href="#exhibitions">Exhibitions</a></li>
-                    </ul>
-                </div> 
+            <a href="#home" class="logo2" aria-label="logo">LOGO</a>
+            <nav id="desktop-nav" aria-label="desktop navigation">
+                <ul class="nav-links" aria-label="navigation links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#exhibitions">Exhibitions</a></li>
+                </ul>
             </nav>
-            <!--END OF DESKTOP NAV-->
+            <!--END OF DESKTOP NAV-->   
         </header>
         <!--END OF HEADER-->
-        <bento-sidebar id="sidebar1" side="right" hidden>
-            <ul class="bento">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#Gallery">Gallery</a></li>
-              <li><a href="#exhibitions">Exhibitions</a></li>
-            </ul>
-        </bento-sidebar>
-        <!--BENTO BUTTONS-->
-        <div class="buttons" style="margin-top: 0.5rem;">
-            <button id="open-sidebar" aria-label="menu"><i class="fa-solid fa-bars fa-2x"></i></button>
-        </div>
-        <!--END OF BENTO SIDEBAR-->
         <section id="home"  class="home" aria-label="home">
             <div class="container">
                 <div class="left">
@@ -198,7 +199,7 @@
                     <ul class="footer-legal-items">
                        <li><a href="#">Terms &amp; Conditions</a></li>
                        <li><a href="#">Privacy Policy</a></li>
-                       <li>&copy; Copyright 2022 art</li>
+                       <li>&copy; Copyright 2022 Logo</li>
                     </ul>
                 </small>
             </section>
